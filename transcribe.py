@@ -45,12 +45,16 @@ def main():
     srt = utils.get_srt(srt_endpoint, header)
 
     # Save and print transcript
-    with open('transcript.txt', 'w') as f:
+    filename = args.audio_file[:-3] + '.txt'
+
+    with open(filename, 'w') as f:
         for para in paragraphs:
             print(para['text'] + '\n')
             f.write(para['text'] + '\n' + '\n')
 
-    with open('transcript.srt', 'w') as f:
+    srt_name = args.audio_file[:-3] + ".srt"
+
+    with open(srt_name, 'w') as f:
         f.write(srt)
     # print(srt)
 
