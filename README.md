@@ -1,6 +1,6 @@
-# speech-recognition-in-5-minutes-with-python
+# Python Transcript & SRT Generator
 
-Repo for hosting tutorial code associated with the [AssemblyAI and Python in 5 Minutes](https://www.assemblyai.com/blog/assemblyai-and-python-in-5-minutes/) blog by [AssemblyAI](https://www.assemblyai.com/)
+Modified from the tutorial code associated with the [AssemblyAI and Python in 5 Minutes](https://www.assemblyai.com/blog/assemblyai-and-python-in-5-minutes/) blog by [AssemblyAI](https://www.assemblyai.com/)
 
 
 ## Requirements
@@ -28,3 +28,6 @@ Example for local file:
 ```console
 $ python transcribe.py audio.mp3 --local --api_key=<YOUR-API-KEY>
 ```
+
+## Output
+The output of `transcrbe.py` will save a `transcript.txt` and `transcript.srt` file when transcription is complete.
