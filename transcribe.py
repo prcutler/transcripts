@@ -50,7 +50,7 @@ def main():
             print(para['text'] + '\n')
             f.write(para['text'] + '\n' + '\n')
 
-    with open('srt.txt', 'w') as f:
+    with open('transcript.srt', 'w') as f:
         f.write(srt)
     # print(srt)
 
