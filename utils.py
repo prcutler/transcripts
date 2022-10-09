@@ -1,3 +1,4 @@
+# Code from https://github.com/AssemblyAI-Examples/assemblyai-and-python-in-5-minutes
 import requests
 import time
 
